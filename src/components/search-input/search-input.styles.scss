@@ -2,10 +2,18 @@
   width: 25%;
   padding: 0.8rem 1rem;
   border-radius: 0.3rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   height: 2rem;
   border: none;
   outline: none;
   font-size: 1rem;
   background-color: #ebedfe;
   color: grey;
+}
+
+@media (max-width: 768px) {
+  .search-input {
+    width: 50%;
+  }
 }
