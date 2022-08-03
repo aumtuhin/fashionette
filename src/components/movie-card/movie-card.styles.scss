@@ -6,6 +6,17 @@
   padding-bottom: 1rem;
   border-radius: 0.3rem;
   color: #555657;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  transition: 0.3s ease;
+
+  &:hover {
+    -webkit-box-shadow: 0px 20px 36px -6px rgba(107, 107, 107, 1);
+    -moz-box-shadow: 0px 20px 36px -6px rgba(107, 107, 107, 1);
+    box-shadow: 0px 20px 36px -6px rgba(107, 107, 107, 1);
+  }
 
   .title {
     text-transform: uppercase;
@@ -22,7 +33,7 @@
   }
 
   .rating {
-    padding-top: .5rem;
+    padding-top: 0.5rem;
     font-weight: bold;
   }
 
@@ -62,5 +73,15 @@
       background-color: transparent;
       color: grey;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-card {
+    flex: 2 0 40%;
+  }
+
+  .genres {
+    flex-direction: row;
   }
 }
