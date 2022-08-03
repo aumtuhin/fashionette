@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from "react-router-dom";
 import './index.scss';
 import App from './App';
 import { MovieProvider } from './contexts/movieContext';
@@ -9,8 +10,10 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <MovieProvider>
-      <App />
-    </MovieProvider>
+    <BrowserRouter>
+      <MovieProvider>
+        <App />
+      </MovieProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
