@@ -1,13 +1,16 @@
 import './App.scss';
-import Movies from './components/movies/movies';
+import Header from './components/header/header';
+import Home from './pages/home/home';
 
 function App() {
 
   return (
     <div className="App">
-      <Movies />
+      <Header />
+      <Home />
     </div>
   );
 }
 
 export default App;
+
