@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { useContext } from 'react';
 import MovieCard from '../movie-card/movie-card';
 import { MovieContext } from '../../contexts/movieContext';
