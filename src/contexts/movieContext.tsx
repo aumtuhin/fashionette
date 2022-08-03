@@ -1,22 +1,25 @@
+import React, { Dispatch, SetStateAction } from 'react';
 import axios from 'axios';
 import { createContext, useEffect, useState } from 'react';
 import { rootUrl } from '../constants/const';
 
-// interfac of movie context
 interface IMovieContext {
     movies: any;
     isLoading: boolean;
+    setIsLoading: Dispatch<SetStateAction<boolean>>;
+    setMovies: Dispatch<SetStateAction<any>>;
 }
 
 const defaultState = {
     movies: [],
     isLoading: false,
+    setIsLoading: () => { return false },
+    setMovies: () => { return [] },
 }
 
 
 export const MovieContext = createContext<IMovieContext>(defaultState);
 
-// declare props type to avoid error in wrapping up the JSX children in index.tsx
 interface props {
     children: JSX.Element | JSX.Element[]
 }
@@ -46,7 +49,7 @@ export const MovieProvider = ({ children }: props) => {
 
     return (
         <MovieContext.Provider
-            value={{ movies, isLoading }}
+            value={{ movies, isLoading, setIsLoading, setMovies }}
         >
             {children}
         </MovieContext.Provider>
