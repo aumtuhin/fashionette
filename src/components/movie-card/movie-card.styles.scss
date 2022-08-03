@@ -1,6 +1,7 @@
 .movie-card {
   width: 22%;
   margin: 5px;
+  background-color: #ebedfe;
   margin-top: 2rem;
   padding-bottom: 1rem;
   border-radius: 0.3rem;
@@ -11,7 +12,20 @@
   }
 
   .movie-thumb {
-    max-width: 55%;
-    max-height: 55%;
+    object-fit: cover;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 20px 36px -6px rgba(107, 107, 107, 1);
+    -moz-box-shadow: 0px 20px 36px -6px rgba(107, 107, 107, 1);
+    box-shadow: 0px 20px 36px -6px rgba(107, 107, 107, 1);
+  }
+
+  .rating {
+    padding-top: 0.5rem;
+    font-weight: bold;
+  }
+  .summary {
+    text-align: center;
+    padding: 0 1rem 0 1rem;
+    font-size: 1rem;
   }
 }
