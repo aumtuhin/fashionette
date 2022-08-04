@@ -33,6 +33,18 @@ Now visit
 http://localhost:3000
 ```
 
+To run the test, run the command
+```
+yarn test
+```
+and press `a` on your keyboard to run all test cases, it will take couple of seconds.
+
+Congrats!! You are good to go
+
+Happy coding!
+
+
+
 
 
 
